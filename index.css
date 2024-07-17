@@ -1,0 +1,147 @@
+body {
+  font-family: 'Inter';
+}
+.d-n {
+  display: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+}
+
+.category {
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+.opt-select {
+  color: white;
+  background-color: black;
+}
+
+.products {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+  overflow: hidden;
+  width: 200px;
+}
+
+.image {
+  overflow: hidden;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  background-color: white;
+  font-size: 15px;
+  color: black;
+  padding: 4px;
+  text-align: center;
+  border-radius: 1px;
+  top: 5px;
+  left: 4px;
+
+  border-radius: 2px;
+}
+.men-img {
+  width: 200px;
+  border-radius: 8px;
+  height: 300px;
+}
+
+.details {
+  margin-top: 5px;
+}
+
+.details-top {
+  display: flex;
+  gap: 3px;
+}
+
+.name {
+  font-weight: 600;
+  margin-right: 5px;
+  -webkit-line-clamp: ;
+}
+
+.vendor {
+  list-style-type: disc;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: small;
+}
+
+.cprice {
+  padding-left: 2px;
+  padding-right: 4px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 12px;
+  color: red;
+}
+
+.btn-cont {
+  margin-top: 4px;
+  background-color: black;
+  border-radius: 6px;
+  text-align: center;
+  width: 200px;
+}
+
+.btn {
+  background: transparent;
+  text-align: center;
+  border: none;
+  font-weight: 500;
+  color: white;
+  padding: 8px;
+  /* width: 100px; */
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: medium;
+  }
+  .category {
+    font-size: smaller;
+    width: 160px;
+  }
+
+  .products {
+    flex-direction: column;
+
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category {
+    font-size: medium;
+    width: 180px;
+  }
+}
